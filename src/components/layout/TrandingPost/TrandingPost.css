@@ -1,0 +1,92 @@
+.tranding-post-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.tranding-post-wrapper h1 {
+  font-family: var(--roboto);
+  color: var(--main-color);
+  font-size: 2.5rem;
+  margin-bottom: 6rem;
+}
+
+.tranding-post {
+  box-shadow: 0 0 2rem #06016f29;
+  width: 100%;
+  padding: 5rem 6.5rem;
+  border-radius: 3.5rem;
+}
+
+.tranding-post .post {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.2rem;
+}
+
+.tranding-post .post:nth-child(2) {
+  margin: 5rem 0;
+}
+
+.tranding-post .post img {
+  box-shadow: .5rem 1rem 2rem #06016f29;
+  width: auto;
+  height: 17rem;
+  border-radius: 2rem;
+}
+
+.tranding-post .post .content {
+  font-family: var(--roboto);
+}
+
+.tranding-post .post .content p {
+  color: var(--main-color);
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}
+
+.tranding-post .post .content h4 {
+  color: var(--main-color);
+  margin-top: 1.8rem;
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width:1024px) {
+  .tranding-post .post {
+    flex-direction: column;
+  }
+
+  .tranding-post .post img {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .tranding-post {
+    padding: 2rem 0;
+  }
+
+  .tranding-post .post {
+    padding: 0 5.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tranding-post-wrapper {
+    width: 98%;
+    margin: auto;
+    padding: 0 .5rem;
+  }
+
+  .tranding-post {
+    border-radius: 0;
+  }
+
+  .tranding-post .post {
+    padding: 0 1.5rem;
+  }
+}

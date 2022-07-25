@@ -1,0 +1,26 @@
+.wrapper_home {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.wrapper-for-mostliked-and-tranding {
+    display: flex;
+    gap: 5rem;
+    width: 100%;
+    margin-top: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 980px) {
+    .wrapper_home {
+        width: 100%;
+        margin: 0;
+    }
+
+    .wrapper-for-mostliked-and-tranding{
+        gap: 7rem;
+        flex-direction: column;
+    }
+
+}

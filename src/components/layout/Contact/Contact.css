@@ -1,0 +1,77 @@
+.contact{
+    margin-top: 10rem;
+    height: 45rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background: url('../../../images/contactBackground.png'), var(--main-color);
+    background-blend-mode: multiply;
+    background-size: cover;
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact h1{
+    color: #fff;
+    font-family: var(--roboto-slab);
+    font-size: 2.6rem;
+}
+
+.contact p{
+    color: #fff;
+    font-size: 1.6rem;
+    margin: 3rem 0;
+    font-family: var(--roboto);
+}
+
+.contact .input-field{
+    width: 69rem;
+    height: 5rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.2rem;
+    margin-top: 2rem;
+}
+
+.contact .input-field input{
+    height: 100%;
+    width: 70%;
+    border: none;
+    outline: none;
+    border-top-left-radius: 1.2rem;
+    border-bottom-left-radius: 1.2rem;
+    padding: 0 1rem;
+    font-size: 1.6rem;
+}
+
+.contact .input-field button{
+    width: 30%;
+    height: 100%;
+    background-color: var(--main-color);
+    border: none;
+    color: #fff;
+    border-radius: 1.2rem;
+    font-size: 1.6rem;
+}
+
+
+@media screen and (max-width: 480px){
+
+    .contact{
+        height: 35rem;
+        border-radius: 0;
+        margin-top: 18rem;
+    }
+
+    .contact p{
+        font-size: 1.2rem;
+    }
+
+    .contact .input-field{
+        width: 42rem;
+    }
+}

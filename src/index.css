@@ -1,0 +1,43 @@
+/* imported font  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+  --roboto: "Roboto", sans-serif;
+  --roboto-slab: "Roboto Slab", serif;
+  --main-color: #06016f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none; 
+  text-decoration: none;
+  color: #000;
+ 
+}
+
+a{
+  text-decoration: none !important;
+}
+
+html {
+  font-size: 62.5% !important;
+  scroll-behavior: smooth;
+}
+
+.w-95{
+  width: 95% !important;
+}
+
+@media screen and (max-width: 1024px) {
+  html{
+    font-size: 55% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html{
+    font-size: 45% !important;
+  }
+}

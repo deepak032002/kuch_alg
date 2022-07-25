@@ -1,0 +1,136 @@
+.about {
+  margin-top: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  /* border: 2px solid black; */
+}
+
+.about .about-image {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  /* border: 2px solid red; */
+}
+
+.about .about-image img:nth-child(1) {
+  width: auto;
+  height: 50rem;
+}
+
+.about .about-image img:nth-child(2) {
+  width: auto;
+  position: absolute;
+  height: 35rem;
+  left: 55%;
+}
+
+.about .about-text {
+  font-family: var(--roboto);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 25rem;
+  height: inherit;
+  /* border: 2px solid green; */
+}
+
+.about .about-text .wrapper h2 {
+  color: var(--main-color);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 2.5rem;
+}
+
+.about .about-text .wrapper h4 {
+  color: var(--main-color);
+  font-size: 1.5rem;
+  margin: 0 0 3rem;
+}
+
+.about .about-text .wrapper p {
+  color: var(--main-color);
+}
+
+.about .about-text .wrapper .about-author {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.about .about-text .wrapper .about-message {
+  line-height: 2rem;
+  font-size: 1.4rem;
+  margin: 0 0 4rem;
+}
+
+@media screen and (max-width: 980px) {
+  .about .about-image img:nth-child(1){
+    margin: auto;
+    height:45rem;
+  }
+
+  .about .about-image img:nth-child(2){
+    height: 30rem;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+  .about{
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 25rem;
+  }
+
+  .about .about-image img:nth-child(1){
+    margin: auto;
+    height:60rem;
+  }
+
+  .about .about-image img:nth-child(2){
+    left: 50%;
+    top: 70%;
+    transform: translateX(-50%);
+    height: 40rem;
+    width: auto;
+  }
+
+  .about .about-text{
+    /* width: %; */
+    padding: 0 2rem;
+  }
+
+  .about .about-text .wrapper h2{
+    font-size: 3rem;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .about{
+    gap: 17rem;
+  }
+
+  .about .about-image img:nth-child(1){
+    width: 100%;
+    margin: auto;
+  }
+
+
+.about .about-image img:nth-child(2){
+    left: 50%;
+    top: 70%;
+    transform: translateX(-50%);
+    height: auto;
+    width: 40rem;
+  }
+
+  .about .about-text{
+    width: 100%;
+  }
+}

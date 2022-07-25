@@ -1,0 +1,130 @@
+.card-wrapper {
+  margin-top: 7rem;
+}
+
+.card-wrapper .card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-wrapper .card-top p {
+  color: var(--main-color);
+  line-height: 3.6rem;
+}
+
+.card-wrapper .card-top p:nth-child(1) {
+  font-family: var(--roboto);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.card-wrapper .card-top p:nth-child(2) {
+  font-family: var(--roboto);
+  margin-top: .5rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.card-wrapper .card-down {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7rem;
+  position: relative;
+}
+
+.card-wrapper .card-down .controller {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-wrapper .card-down .controller .left,
+.card-wrapper .card-down .controller .right {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0 0 20px #06016F29;
+}
+
+.card-wrapper .card-down .controller .left {
+  left: 0px;
+}
+
+.card-wrapper .card-down .controller .right {
+  right: 0px;
+}
+
+.card-wrapper .card-down .controller .left button,
+.card-wrapper .card-down .controller .right button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.card-wrapper .card-down .controller .left button i,
+.card-wrapper .card-down .controller .right button i {
+  font-size: 25px;
+  font-weight: 9 00;
+  color: var(--main-color);
+}
+
+/* .card-wrapper .card-down .controller */
+
+.card-down .cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 55px;
+  box-shadow: 0 0 20px #06016f29;
+  overflow: hidden;
+  gap: 1rem;
+  width: 90%;
+  margin: auto;
+}
+
+.card-down .cards .cards-image-top img {
+  width: 100%;
+}
+
+.card-down .cards .cards-down {
+  width: 88%;
+  margin: 20px auto 0;
+}
+
+.card-down .cards .cards-down .cards-text {
+  color: var(--main-color);
+  font-size: 13px;
+  line-height: 21px;
+  font-family: var(--roboto);
+}
+
+.card-down .cards .cards-down button {
+  margin: 30px 0;
+  font-size: 10px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+
+
+@media screen and (max-width: 980px) {
+  .card-wrapper .card-top {
+    padding: 0 1rem;
+  }
+
+}
+
+@media screen and (max-width: 768px) {}

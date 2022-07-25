@@ -1,0 +1,224 @@
+.footer {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10rem;
+  background-color: var(--main-color);
+  padding: 2rem 4rem;
+}
+
+.footer .top {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer .top .column-first img {
+  width: auto;
+  height: 12rem;
+  margin-bottom: 3rem;
+}
+
+.footer .top .column-first .detail {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  margin: 1.2rem 0;
+}
+
+.footer .top .column-first .detail i {
+  height: 2rem;
+  width: 2rem;
+  background-color: #fff;
+  color: var(--main-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .top .column-first .detail p {
+  color: #fff;
+  font-size: 1.3rem;
+  font-family: var(--roboto);
+}
+
+.footer .top .column-second,
+.footer .top .column-third,
+.footer .top .column-fourth {
+  padding-top: 4rem;
+  line-height: 4rem;
+}
+
+.footer .top .column-second h2,
+.footer .top .column-third h2,
+.footer .top .column-fourth h2 {
+  font-family: var(--roboto);
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.footer .top .column-second p,
+.footer .top .column-third p,
+.footer .top .column-fourth p {
+  font-family: var(--roboto);
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.footer .top .column-fifth {
+  padding-top: 5rem;
+  font-family: var(--roboto);
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .top .column-fifth h2 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.footer .top .column-fifth p {
+  font-size: 1.6rem;
+  color: #fff;
+  margin: 2.5rem 0;
+}
+
+.footer .top .column-fifth .input-field {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.footer .top .column-fifth .input-field label {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.footer .top .column-fifth .input-field input {
+  width: 28rem;
+  height: 3.5rem;
+  border: .2rem solid white;
+  background-color: transparent;
+  border-radius: .5rem;
+  outline: none;
+  color: #fff;
+  padding-left: .4rem;
+}
+
+.footer .top .column-fifth .input-field input::placeholder {
+  color: #fff;
+  padding: 0 .5rem;
+}
+
+.footer .top .column-fifth button {
+  background-color: #fff;
+  color: var(--main-color);
+  margin-top: 2.5rem;
+  border: none;
+  border-radius: 2rem;
+  height: 3rem;
+  width: 12rem;
+  font-weight: 700;
+}
+
+.footer .top .column-fifth .social-link {
+  display: flex;
+  margin-top: 2rem;
+  gap: 2.5rem;
+}
+
+
+.footer .top .column-fifth .social-link i {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-color: #fff;
+  color: var(--main-color);
+  font-size: 1.6rem;
+  padding: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.footer .down {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer .down .left p {
+  color: #fff;
+  font-family: var(--roboto);
+}
+
+.footer .down .right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.8rem;
+}
+
+.footer .down .right p {
+  color: #fff;
+  font-family: var(--roboto);
+}
+
+@media screen and (max-width: 768px) {
+
+  .footer .top {
+    align-items: center;
+  }
+
+  .footer .top .column-second,
+  .footer .top .column-third,
+  .footer .top .column-fourth,
+  .footer .top .column-fifth {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer .top .column-first .detail p,
+  .footer .top .column-second p,
+  .footer .top .column-third p,
+  .footer .top .column-fourth p,
+  .footer .top .column-fifth p {
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
+
+  .footer .top .column-second h2,
+  .footer .top .column-third h2,
+  .footer .top .column-fourth h2 {
+    font-size: 2.5rem;
+  }
+
+
+
+}
+
+
+@media screen and (max-width: 480px) {
+  .footer .top {
+    flex-direction: column;
+  }
+
+
+  .footer .top .column-fifth .input-field label, .footer .top .column-fifth .input-field input {
+    font-size: 1.7rem;
+  }
+
+  .footer .top .column-fifth button {
+    font-size: 1.6rem;
+  }
+
+}
